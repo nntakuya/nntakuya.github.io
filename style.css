@@ -1,0 +1,38 @@
+:root{--bg:#F5F0E6;--fg:#1F1B16;--sub:#6B6258;--accent:#C1272D;--rule:#C9C0B0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:16px;line-height:1.9;overflow-wrap:anywhere}
+header,main,footer{max-width:40em;margin:0 auto;padding:0 16px}
+header{padding-top:16px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+nav.site{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:.85em;color:var(--sub)}
+h1,h2{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-weight:700;line-height:1.5}
+h1{font-size:1.4em;margin:1.5em 0 1em;padding-bottom:.4em;border-bottom:2px solid var(--accent)}
+h2{font-size:1.1em;margin:2.2em 0 .6em;padding-left:.6em;border-left:3px solid var(--accent)}
+p{margin:0 0 1em}
+ol,ul{margin:0 0 1em;padding-left:1.6em}
+a{color:var(--accent);text-underline-offset:.2em}
+strong{color:var(--accent)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+blockquote{margin:0 0 1.5em;padding:.2em 0 .2em 1em;border-left:3px solid var(--rule);color:var(--sub);font-size:.9em}
+blockquote p{margin:0}
+.lead{font-size:1.05em}
+.mail{font-family:"Hiragino Sans","Yu Gothic",sans-serif}
+.table{overflow-x:auto;margin:0 0 1em}
+table{border-collapse:collapse;font-size:.85em;line-height:1.7;min-width:100%}
+th,td{border:1px solid var(--rule);padding:.5em .6em;text-align:left;vertical-align:top}
+th{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-weight:700}
+footer{margin-top:3em;padding-top:1em;padding-bottom:2em;border-top:1px solid var(--rule);color:var(--sub);font-size:.8em}
+footer p{margin:0}
+@media (max-width:40em){
+ .table table,.table thead,.table tbody,.table tr,.table th,.table td{display:block}
+ .table thead{position:absolute;left:-9999px}
+ .table tr{border-top:1px solid var(--rule);padding:.5em 0}
+ .table td{border:0;padding:.2em 0}
+ .table td::before{display:block;color:var(--sub);font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:.85em}
+ .table td:nth-child(1)::before{content:"サービス名"}
+ .table td:nth-child(2)::before{content:"送信先の事業者名"}
+ .table td:nth-child(3)::before{content:"送信される情報"}
+ .table td:nth-child(4)::before{content:"利用目的"}
+ .table td:nth-child(5)::before{content:"送信先のプライバシーポリシー"}
+ .table td:nth-child(6)::before{content:"止める方法"}
+}
